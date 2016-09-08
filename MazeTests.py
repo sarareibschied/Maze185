@@ -6,8 +6,13 @@ class testMaze(unittest.TestCase):
         # this checks for a Maze class
         self.m=Maze()
 
-    def testScreenExists(self):
-        assert type(self.m) == Maze
+    def testMazeExists(self):
+        pass
 
-if __name__=="__main__":
-    unittest.main(exit=False)
+    def testScreenExists(self):
+        assert type(self.m.s) == turtle._Screen
+
+    def testTurtleExists(self):
+        assert type(self.m.t) == turtle._Turtle
+
+unittest.main()
